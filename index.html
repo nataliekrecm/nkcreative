@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/cbf48acd1a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/nk creative.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark fa-lg" style="color: #000000;" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -23,6 +24,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" style="color: black;" onclick="showMenu()"></i>
         </nav>
 
     <div class="text-box">
@@ -34,7 +36,19 @@
 
     </section>
    
+<script>
 
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+
+</script>
     
 </body>
 </html>
