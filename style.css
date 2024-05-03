@@ -120,8 +120,14 @@ nav img{
         display: block;
         color: #000000;
         margin: 10px;
+        padding: 10px;
         font-size: 22px;
         cursor: pointer;
+    }
+
+    .fa-xmark {
+        size: 30px;
+        padding-top: 28px;
     }
     .nav-links ul{
         padding: 40px;
