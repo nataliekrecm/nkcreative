@@ -107,7 +107,7 @@ nav img{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: white;
         height: 100vh;
         width: 200px;
@@ -291,4 +291,54 @@ h3{
     margin-top: -10px;
    }
 }
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
     
+
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.about-nk{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+
+.about-nk img{
+    width: 80%;
+}
+
+.about-nk h1{
+    padding-top: 0;
+}
+
+.about-nk p{
+    padding: 15px 0 25px;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #cccc;
+    box-sizing: border-box;
+    margin-left: 80px;
+
+}
+.contact-col button{
+    display: flex;
+    margin-left: 80px;
+}
